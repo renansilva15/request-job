@@ -1,9 +1,11 @@
-import fastify from "fastify";
+import fastify from 'fastify';
 
-const app = fastify()
+const app = fastify();
 
-app.get("/", (req, res) => {
-  return {status: "Ok"}
-})
+app.get('/', (req, res) => {
+  return { status: 'Ok' };
+});
 
-app.listen({port: 3333}).then((url) => {console.log(`Server listen ${url}`)});
+app.listen({ port: 3333 }).then((url) => {
+  console.log(`Server listen ${url}`);
+});
